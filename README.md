@@ -1,38 +1,38 @@
-# Yard::Coderay
+# yard-coderay
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/yard/coderay`. To experiment with that code, run `bin/console` for an interactive prompt.
+This YARD plugin enables syntax highlighting to all CodeRay supported languages.
 
-TODO: Delete this and the text above, and describe your gem
-
-## Installation
-
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'yard-coderay'
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install yard-coderay
 
 ## Usage
 
-TODO: Write usage instructions here
+Install the gem
 
-## Development
+    $ gem install yard-coderay
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+Document your code and tag the sample code language
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+```ruby
+# Some method description
+#
+#       !!!html
+#       <p>some HTML example code</p>
+#
+def some_method
+  # ...
+end
+```
+
+Run YARD
+
+    $ yardoc --plugin coderay
+
+And now your code samples should be documented with the tagged language syntax
+highlighting
+
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/yard-coderay. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/sagmor/yard-coderay. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](contributor-covenant.org) code of conduct.
 
 
 ## License
