@@ -1,6 +1,6 @@
 # yard-coderay
 
-This YARD plugin enables syntax highlighting to all CodeRay supported languages.
+This YARD plugin enables syntax highlighting to all [CodeRay](http://coderay.rubychan.de/) supported languages.
 
 
 ## Usage
@@ -26,8 +26,7 @@ Run YARD
 
     $ yardoc --plugin coderay
 
-And now your code samples should be documented with the tagged language syntax
-highlighting
+And now your code samples should be documented with the tagged language syntax highlighting
 
 
 ## Contributing
